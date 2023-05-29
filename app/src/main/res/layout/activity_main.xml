@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title_tv_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_name_et_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Button
+        android:id="@+id/main_save_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_save_btn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/main_name_tv_text"
+        app:layout_constraintBottom_toTopOf="@+id/main_seasons_tv_id"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <TextView
+        android:id="@+id/main_seasons_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="@string/main_seasons_tv_text"
+        app:layout_constraintBottom_toTopOf="@+id/main_characters_tv_id"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <TextView
+        android:id="@+id/main_characters_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_characters_tv_text"
+        app:layout_constraintBottom_toTopOf="@+id/main_cancel_btn_id"
+        tools:layout_editor_absoluteX="62dp" />
+
+    <EditText
+        android:id="@+id/main_name_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:ems="10"
+        android:hint="@string/main_name_et_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/main_seasons_et_id"
+        tools:layout_editor_absoluteX="185dp" />
+
+    <EditText
+        android:id="@+id/main_seasons_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="@string/main_seasons_et_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/main_save_btn_id"
+        tools:layout_editor_absoluteX="185dp" />
+
+    <Spinner
+        android:id="@+id/main_characters_spnr_id"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/main_cancel_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_cancel_btn_text"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

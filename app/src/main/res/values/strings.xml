@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HHS Prime</string>
+    <string name="main_save_btn_text">Save</string>
+    <string name="main_title_tv_text">Add TV show</string>
+    <string name="main_name_tv_text">Name</string>
+    <string name="main_seasons_tv_text">Number of seasons</string>
+    <string name="main_characters_tv_text">Main character</string>>
+    <string name="main_seasons_et_hint">8</string>
+    <string name="main_name_et_hint">Entourage</string>
+    <string name="main_cancel_btn_text">Cancel</string>
+</resources>
