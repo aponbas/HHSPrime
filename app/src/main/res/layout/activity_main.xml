@@ -13,9 +13,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/main_name_et_id"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.496" />
 
     <Button
         android:id="@+id/main_save_btn_id"
@@ -24,7 +25,7 @@
         android:text="@string/main_save_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.702" />
@@ -33,10 +34,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="92dp"
         android:text="@string/main_name_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_tv_id"
-        tools:layout_editor_absoluteX="40dp" />
+        tools:layout_editor_absoluteX="31dp" />
 
     <TextView
         android:id="@+id/main_seasons_tv_id"
@@ -45,51 +46,57 @@
         android:layout_marginBottom="84dp"
         android:text="@string/main_seasons_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_characters_tv_id"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:layout_editor_absoluteX="31dp" />
 
     <TextView
         android:id="@+id/main_characters_tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
         android:text="@string/main_characters_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_cancel_btn_id"
-        tools:layout_editor_absoluteX="62dp" />
+        tools:layout_editor_absoluteX="31dp" />
 
     <EditText
         android:id="@+id/main_name_et_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="72dp"
         android:ems="10"
         android:hint="@string/main_name_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_et_id"
-        tools:layout_editor_absoluteX="185dp" />
+        tools:layout_editor_absoluteX="171dp" />
 
     <EditText
         android:id="@+id/main_seasons_et_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
         android:ems="10"
         android:hint="@string/main_seasons_et_hint"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/main_save_btn_id"
-        tools:layout_editor_absoluteX="185dp" />
+        app:layout_constraintBottom_toTopOf="@+id/main_characters_spnr_id"
+        tools:layout_editor_absoluteX="171dp" />
 
     <Spinner
         android:id="@+id/main_characters_spnr_id"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="150dp" />
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_save_btn_id"
+        tools:layout_editor_absoluteX="171dp" />
 
     <Button
         android:id="@+id/main_cancel_btn_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_cancel_btn_text"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".AddCharacterActivity">
 
+    <TextView
+        android:id="@+id/add_character_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_character_title_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/add_character_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/add_character_name_text"
+        app:layout_constraintBottom_toTopOf="@+id/add_character_birthday_id"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <TextView
+        android:id="@+id/add_character_birthday_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/add_character_birthday_text"
+        app:layout_constraintBottom_toTopOf="@+id/add_character_back_id"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <Button
+        android:id="@+id/add_character_back_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_character_back_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <Button
+        android:id="@+id/add_character_save_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_character_save_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <EditText
+        android:id="@+id/add_character_name_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="@string/add_character_name_et_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/add_character_birthday_et_id"
+        tools:layout_editor_absoluteX="190dp" />
+
+    <EditText
+        android:id="@+id/add_character_birthday_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/add_character_birthday_et_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/add_character_save_id"
+        tools:layout_editor_absoluteX="190dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
