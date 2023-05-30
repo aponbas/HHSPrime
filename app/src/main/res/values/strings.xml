@@ -1,18 +1,18 @@
 <resources>
+    <!--GENERAL-->
+    <string name="save_btn_text">Save</string>
+    <string name="cancel_btn_text">Cancel</string>
+    <string name="name_tv_text">Name</string>
+
     <string name="app_name">HHS Prime</string>
-    <string name="main_save_btn_text">Save</string>
-    <string name="main_title_tv_text">Add TV show</string>
-    <string name="main_name_tv_text">Name</string>
-    <string name="main_seasons_tv_text">Number of seasons</string>
-    <string name="main_characters_tv_text">Main character</string>>
-    <string name="main_seasons_et_hint">8</string>
-    <string name="main_name_et_hint">Entourage</string>
-    <string name="main_cancel_btn_text">Cancel</string>
+    <string name="add_show_title_tv_text">Add TV show</string>
+    <string name="add_show_seasons_tv_text">Number of seasons</string>
+    <string name="add_show_characters_tv_text">Main character</string>>
+    <string name="add_show_seasons_et_hint">8</string>
+    <string name="add_show_name_et_hint">Entourage</string>
     <string name="add_character_title_text">Add character</string>
-    <string name="add_character_name_text">Name</string>
     <string name="add_character_birthday_text">Birthday</string>
     <string name="add_character_back_text">Back</string>
-    <string name="add_character_save_text">Save</string>
     <string name="add_character_name_et_hint" translatable="false">Vincent Chase</string>
     <string name="add_character_birthday_et_hint" translatable="false">01-01-1980</string>
 </resources>

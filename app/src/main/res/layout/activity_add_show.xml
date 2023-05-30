@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AddShowActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_title_tv_text"
+        android:text="@string/add_show_title_tv_text"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/main_name_et_id"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,8 @@
         android:id="@+id/main_save_btn_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_save_btn_text"
+        android:onClick="save"
+        android:text="@string/save_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.73"
@@ -35,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
-        android:text="@string/main_name_tv_text"
+        android:text="@string/name_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_tv_id"
         tools:layout_editor_absoluteX="31dp" />
 
@@ -44,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="84dp"
-        android:text="@string/main_seasons_tv_text"
+        android:text="@string/add_show_seasons_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_characters_tv_id"
         tools:layout_editor_absoluteX="31dp" />
 
@@ -53,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:text="@string/main_characters_tv_text"
+        android:text="@string/add_show_characters_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_cancel_btn_id"
         tools:layout_editor_absoluteX="31dp" />
 
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
         android:ems="10"
-        android:hint="@string/main_name_et_hint"
+        android:hint="@string/add_show_name_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_et_id"
         tools:layout_editor_absoluteX="171dp" />
@@ -74,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:ems="10"
-        android:hint="@string/main_seasons_et_hint"
+        android:hint="@string/add_show_seasons_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/main_characters_spnr_id"
         tools:layout_editor_absoluteX="171dp" />
@@ -91,7 +92,7 @@
         android:id="@+id/main_cancel_btn_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_cancel_btn_text"
+        android:text="@string/cancel_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.194"

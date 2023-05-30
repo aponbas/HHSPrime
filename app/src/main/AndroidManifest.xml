@@ -16,8 +16,9 @@
             android:name=".AddCharacterActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".AddShowActivity"
+            android:exported="true"
+            android:theme="@style/GreenText">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

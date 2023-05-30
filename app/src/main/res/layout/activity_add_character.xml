@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="@string/add_character_name_text"
+        android:text="@string/name_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/add_character_birthday_id"
         tools:layout_editor_absoluteX="52dp" />
 
@@ -41,6 +41,7 @@
         android:id="@+id/add_character_back_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="goToAddCharacterActivity"
         android:text="@string/add_character_back_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,8 @@
         android:id="@+id/add_character_save_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_character_save_text"
+        android:onClick="finish"
+        android:text="@string/save_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.761"
