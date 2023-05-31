@@ -6,18 +6,23 @@ public class Show {
     private int seasons;
     private Character mainCharacter;
 
+    private static int counter = 0;
+
     public Show() {
+        this.id = counter++;
     }
 
     public Show(String name, int seasons) {
         this.name = name;
         this.seasons = seasons;
+        this.id = counter++;
     }
 
     public Show(String name, int seasons, Character character) {
         this.name = name;
         this.seasons = seasons;
         this.mainCharacter = character;
+        this.id = counter++;
     }
 
     public int getId() {

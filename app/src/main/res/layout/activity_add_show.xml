@@ -35,39 +35,44 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="76dp"
         android:text="@string/name_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_tv_id"
-        tools:layout_editor_absoluteX="31dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/main_seasons_tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/add_show_seasons_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_characters_tv_id"
-        tools:layout_editor_absoluteX="31dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/main_characters_tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:layout_marginBottom="56dp"
         android:text="@string/add_show_characters_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/main_cancel_btn_id"
-        tools:layout_editor_absoluteX="31dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/main_name_et_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:hint="@string/add_show_name_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/main_seasons_et_id"
-        tools:layout_editor_absoluteX="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
 
     <EditText
         android:id="@+id/main_seasons_et_id"
@@ -78,7 +83,8 @@
         android:hint="@string/add_show_seasons_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/main_characters_spnr_id"
-        tools:layout_editor_absoluteX="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_seasons_tv_id" />
 
     <Spinner
         android:id="@+id/main_characters_spnr_id"
@@ -86,12 +92,15 @@
         android:layout_height="43dp"
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toTopOf="@+id/main_save_btn_id"
-        tools:layout_editor_absoluteX="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toEndOf="@+id/main_characters_tv_id" />
 
     <Button
         android:id="@+id/main_cancel_btn_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="goToAddCharacterActivity"
         android:text="@string/cancel_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

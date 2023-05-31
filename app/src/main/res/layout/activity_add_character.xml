@@ -23,25 +23,27 @@
         android:id="@+id/add_character_name_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="72dp"
         android:text="@string/name_tv_text"
         app:layout_constraintBottom_toTopOf="@+id/add_character_birthday_id"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/add_character_birthday_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/add_character_birthday_text"
         app:layout_constraintBottom_toTopOf="@+id/add_character_back_id"
-        tools:layout_editor_absoluteX="52dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/add_character_back_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToAddCharacterActivity"
+        android:onClick="finish"
         android:text="@string/add_character_back_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +56,7 @@
         android:id="@+id/add_character_save_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="finish"
+        android:onClick="saveCharacter"
         android:text="@string/save_btn_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +74,8 @@
         android:hint="@string/add_character_name_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/add_character_birthday_et_id"
-        tools:layout_editor_absoluteX="190dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_character_name_id" />
 
     <EditText
         android:id="@+id/add_character_birthday_et_id"
@@ -83,5 +86,6 @@
         android:hint="@string/add_character_birthday_et_hint"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/add_character_save_id"
-        tools:layout_editor_absoluteX="190dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_character_birthday_id" />
 </androidx.constraintlayout.widget.ConstraintLayout>

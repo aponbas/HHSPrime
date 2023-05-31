@@ -11,20 +11,22 @@ public class Character {
     private Date dateOfBirth;
     private ArrayList<Show> showList;
 
+    private static int counter = 0;
+
 
     public Character() {
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
+        this.id = counter++;
     }
 
     public Character(String name) {
         this.name = name;
-        this.dateOfBirth = dateOfBirth;
+        this.id = counter++;
     }
 
     public Character(String name, Date dateOfBirth) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
+        this.id = counter++;
     }
 
     public String getName() {

@@ -12,4 +12,6 @@
     <string name="save_btn_text">Opslaan</string>
     <string name="cancel_btn_text">Annuleer</string>
     <string name="name_tv_text">Naam</string>
+    <string name="add_character_success_text">Character toegevoegd1</string>
+    <string name="add_show_success_text">Show toegevoegd!</string>
 </resources>

@@ -10,9 +10,11 @@
     <string name="add_show_characters_tv_text">Main character</string>>
     <string name="add_show_seasons_et_hint">8</string>
     <string name="add_show_name_et_hint">Entourage</string>
+    <string name="add_show_success_text">Show added!</string>
     <string name="add_character_title_text">Add character</string>
     <string name="add_character_birthday_text">Birthday</string>
     <string name="add_character_back_text">Back</string>
     <string name="add_character_name_et_hint" translatable="false">Vincent Chase</string>
     <string name="add_character_birthday_et_hint" translatable="false">01-01-1980</string>
+    <string name="add_character_success_text">Character added!</string>
 </resources>
